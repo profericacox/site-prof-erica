@@ -1,58 +1,70 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title>Materias - Prof. Érica</title>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Técnico em Desenvolvimento de Sistemas</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="turmas.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
 
-		<link rel="stylesheet" href="reset.css">
-		<link rel="stylesheet" href="turmas.css">
-	</head>
-	<body>
-		<header>
-			<div class="caixa">
-				<h1><img src="logo.png"></h1>
+<body>
+	<header>
+		<div class="caixa">
+			<h1><img src="logo2.png" alt="Logo"></h1>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+                    <li><a href="tds1.html">1º TDS</a></li>
+                    <li><a href="tds2.html">2º TDS</a></li>
+                    <li><a href="mat2.html">MAT II</a></li>
+                    <li><a href="infob.html">INFO. Básica</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
 
-				<nav>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="tds1.html">1º TDS</a></li>
-						<li><a href="tds2.html">2º TDS</a></li>
-						<li><a href="contato.html">Contato</a></li>
-					</ul>
-				</nav>
-			</div>
-		</header>
+	<main>
+		<section class="nome-turma">
+			<h1>2º TDS</h1>
+		</section>
+		<section class="materias">
+			<article>
+				<h2>HTML</h2>
+				<img class="logo-materia" src="html.png" alt="Logo Lógica">
+				<p class="materia-descricao">Slides e materiais interessantes sobre Lógica de Programação</p>
+				<a href="#" class="link-materiais">Acesse</a>
+			</article>
+			<article>
+				<h2>BANCO DE DADOS</h2>
+				<img class="logo-materia" src="bd.png" alt="Logo Ciências da Computação">
+				<p class="materia-descricao">Slides e materiais interessantes sobre Ciências da Computação</p>
+				<a href="#" class="link-materiais">Acesse</a>
+			</article>
+			<article>
+				<h2>ANÁLISE</h2>
+				<img class="logo-materia" src="analise.png" alt="Logo Análise">
+				<p class="materia-descricao">Slides e materiais interessantes sobre Análise</p>
+				<a href="#" class="link-materiais">Acesse</a>
+			</article>
+		</section>
+	</main>
 
-		<main>
-			<ul class="nome-turma">
-				<li>
-					<h1>2º TDS</h1>
-				</li>
-			</ul>
-			<ul class="materias">
-				<li>
-					<h2>HTML</h2>
-					<img src="html.png" >
-					<p class="materia-descricao">Slides e materias interessantes sobre HTML</p>
-					<p class="link-materiais">Acesse</p>
-				</li>
-				<li>
-					<h2>BD</h2>
-					<img src="bd.png">
-					<p class="materia-descricao">Slides e materias interessantes sobre Banco de dados</p>
-					<p class="link-materiais">Acesse</p>
-				</li>
-				<li>
-					<h2>Analise</h2>
-					<img src="analise.png">
-					<p class="materia-descricao">Slides e materias interessantes sobre Analise</p>
-					<p class="link-materiais">Acesse</p>
-				</li>
-			</ul>
-		</main>
+	<footer>
+		<p class="copyright">&copy;
+			<span id="currentYear"></span>
+			Prof. Érica Cox - <span id="currentYear"></span>
+		</p>
+	</footer>
 
-		<footer>
-			<p class="copyright">&copy; Copyright Prof. Érica Cox - 2023</p>
-		</footer>
-	</body>
+	<script>
+		// Obtém o ano atual e atualiza o elemento 'currentYear'
+		document.getElementById('currentYear').textContent = new Date().getFullYear();
+	</script>
+</body>
 </html>

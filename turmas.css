@@ -1,105 +1,94 @@
-header {
-	background: #BBBBBB;
-	padding: 20px 0;
+/* Estilos do conteúdo principal */
+main {
+	width: 90%;
+	max-width: 100%;
+	margin: 5% auto;
 }
 
-.caixa {
-	position: relative;
-	width: 940px;
-	margin: 0 auto;
+.nome-turma {
+	text-align: center;
+	margin-bottom: 30px;
 }
 
-nav {
-	position: absolute;
-	top: 110px;
-	right: 0;
-}
-
-nav li {
-	display: inline;
-	margin: 0 0 0 15px;
-}
-
-nav a {
-	text-transform: uppercase;
-	color: #000000;
+.nome-turma h1 {
+	font-size: 40px;
 	font-weight: bold;
-	font-size: 22px;
-	text-decoration: none;
-}
-
-nav a:hover {
-	color: #C78C19;
-	text-decoration: underline;
+	color: #140f0f; /* Cor de texto*/
 }
 
 .materias {
-	width: 1300px;
-	margin: 0 auto;
-	padding: 50px 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 30px;
 }
 
-.materias li {
-	display: inline-block;
-	text-align: center;
-	width: 30%;
-	vertical-align: top;
-	margin: 0 1.5%;
-	padding: 30px 20px;
-	box-sizing: border-box;
-	border: 2px solid #000000;
+.materias article {
+	width: calc(33.33% - 30px);
+	margin-bottom: 30px;
+	padding: 20px;
+	background-color: #98b0f5; /* Cor de fundo secundária: cinza claro */
 	border-radius: 10px;
-}
-
-.nome-turma li {
-	display: inline-block;
-	text-align: center;
-	width: 100%;
-	vertical-align: top;
-	margin: 0 1.5%;
-	padding: 30px 20px;
-	box-sizing: border-box;
-	border: 3px solid #000000;
-	border-radius: 10px;
-	font-size: 22px;
-	font-weight: bold;
-}
-
-.materias li:hover {
-	border-color: #C78C19;
-}
-
-.materias li:active {
-	border-color: #088C19;	
-}
-
-.materias li:hover h2 {
-	font-size: 34px;
 }
 
 .materias h2 {
-	font-size: 30px;
+	font-size: 24px;
 	font-weight: bold;
+	margin-bottom: 10px;
+	color: #273043; /* Cor principal: azul escuro */
 }
 
-.produto-descricao {
-	font-size: 18px;
+.logo-materia {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.materia-descricao {
+	font-size: 16px;
+	margin-bottom: 10px;
+	color: #140f0f; /* Cor de texto */
 }
 
 .link-materiais {
-	font-size: 22px;
+	font-size: 18px;
 	font-weight: bold;
 	margin-top: 10px;
+	display: inline-block;
+	padding: 8px 15px;
+	background-color: #153a42; /* Cor secundária: azul claro */
+	color: #f8f0f0; /* Cor de texto*/
+	border-radius: 5px;
+	text-decoration: none;
+	transition: background-color 0.3s ease;
+	border: 2px solid #454952; /* Cor principal: azul escuro */
 }
 
-footer {
-	text-align: center;
-	background: url("bg.jpg");
-	padding: 40px 0;
+.link-materiais:hover {
+	background-color: #C78C19; /* Cor de realce: laranja */
 }
 
-.copyright {
-	color: #black;
-	font-size: 13px;
-	margin: 20px 0 0;
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+	.materias article {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.nome-turma h1 {
+		font-size: 28px;
+	}
+
+	.materias article {
+		padding: 15px;
+	}
+
+	.materias h2 {
+		font-size: 20px;
+	}
+
+	.link-materiais {
+		font-size: 16px;
+		padding: 5px 10px;
+	}
 }

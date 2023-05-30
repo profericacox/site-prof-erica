@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Técnico em Desenvolvimento de Sistemas</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="turmas.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<div class="caixa">
+			<h1><img src="logo2.png" alt="Logo"></h1>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+                    <li><a href="tds1.html">1º TDS</a></li>
+                    <li><a href="tds2.html">2º TDS</a></li>
+                    <li><a href="mat2.html">MAT II</a></li>
+                    <li><a href="infob.html">INFO. Básica</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section class="nome-turma">
+			<h1>INFO. BÁSICA</h1>
+		</section>
+		<section class="materias">
+			<article>
+				<h2>INFO. BÁSICA</h2>
+				<img class="logo-materia" src="html.png" alt="Logo Lógica">
+				<p class="materia-descricao">Slides e materiais interessantes sobre Programação</p>
+				<a href="#" class="link-materiais">Acesse</a>
+			</article>
+		</section>
+	</main>
+
+	<footer>
+		<p class="copyright">&copy;
+			<span id="currentYear"></span>
+			Prof. Érica Cox - <span id="currentYear"></span>
+		</p>
+	</footer>
+
+	<script>
+		// Obtém o ano atual e atualiza o elemento 'currentYear'
+		document.getElementById('currentYear').textContent = new Date().getFullYear();
+	</script>
+</body>
+</html>

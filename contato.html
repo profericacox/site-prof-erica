@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Técnico em Desenvolvimento de Sistemas</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="turmas.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<div class="caixa">
+			<h1><img src="logo2.png" alt="Logo"></h1>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+                    <li><a href="tds1.html">1º TDS</a></li>
+                    <li><a href="tds2.html">2º TDS</a></li>
+                    <li><a href="mat2.html">MAT II</a></li>
+                    <li><a href="infob.html">INFO. Básica</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<form>
+			<label for="nomesobrenome">Nome e sobrenome</label>
+			<input type="text" id="nomesobrenome" class="input-padrao" required>
+
+			<label for="email">Email</label>
+			<input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+			<label for="telefone">Telefone</label>
+			<input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+			<label for="mensagem">Mensagem</label>
+			<textarea id="mensagem" class="input-padrao" required></textarea>
+
+			<fieldset>
+				<legend>Como prefere o nosso contato?</legend>
+				<label><input type="radio" name="contato" value="email" checked>
+					Email</label>
+
+				<label><input type="radio" name="contato" value="telefone">
+					Telefone</label>
+
+				<label><input type="radio" name="contato" value="whatsapp">
+					WhatsApp</label>
+			</fieldset>
+
+			<fieldset>
+				<legend>Qual horário prefere ser atendido?</legend>
+				<select>
+					<option>Manhã</option>
+					<option>Tarde</option>
+					<option>Noite</option>
+				</select>
+			</fieldset>
+
+			<label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por
+				email?</label>
+
+			<input type="submit" value="Enviar" class="enviar">
+		</form>
+	</main>
+
+	<footer>
+		<p class="copyright">&copy;
+			<span id="currentYear"></span>
+			Prof. Érica Cox - <span id="currentYear"></span>
+		</p>
+	</footer>
+
+	<script>
+		// Obtém o ano atual e atualiza o elemento 'currentYear'
+		document.getElementById('currentYear').textContent = new Date().getFullYear();
+	</script>
+</body>
+
+</html>

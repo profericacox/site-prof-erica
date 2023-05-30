@@ -1,0 +1,88 @@
+<!-- Define o tipo de documento como HTML -->
+<!DOCTYPE html>
+<!-- Tag raiz do documento HTML, define o idioma da página como português do Brasil -->
+<html lang="pt-br">
+<!-- Cabeçalho do documento, contém metadados e informações sobre o documento -->
+<head>
+    <!-- Especifica o conjunto de caracteres usado para codificar o documento (UTF-8 é amplamente recomendado) -->
+	<meta charset="UTF-8">
+    <!-- Define o modo de compatibilidade para o Internet Explorer (versões recentes) -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Define as configurações de visualização da página no dispositivo (largura do dispositivo e escala inicial) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Define o título da página exibido na barra de título do navegador -->
+    <title>Técnico em Desenvolvimento de Sistemas</title>
+    <!-- Importa um arquivo de estilo CSS externo chamado "style.css" para estilizar a página -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="turmas.css">
+	<!-- Estabelece uma pré-conexão com o servidor de fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<!-- Estabelece uma pré-conexão com o servidor de fontes do Google com o atributo crossorigin -->	
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<!-- Cabeçalho da página -->
+		<div class="caixa">
+			<img src="logo2.png" alt="Logo">
+			<!-- Título da página com o logo -->
+			<nav>
+				<ul>
+					<!-- Navegação -->
+					<li><a href="index.html">Home</a></li>
+					<!-- Link para a página Home -->
+                    <li><a href="tds1.html">1º TDS</a></li>
+                    <!-- Link para a página 1º TDS -->
+                    <li><a href="tds2.html">2º TDS</a></li>
+                    <!-- Link para a página 2º TDS -->
+                    <li><a href="mat2.html">MAT II</a></li>
+                    <!-- Link para a página MAT II -->
+                    <li><a href="infob.html">INFO. Básica</a></li>
+                    <!-- Link para a página INFO. Básica -->
+                    <li><a href="contato.html">Contato</a></li>
+                    <!-- Link para a página Contato -->
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<!-- Conteúdo principal da página -->
+		<section class="nome-turma">
+			<!-- Seção para exibir o nome da turma -->
+			<h1>MAT II</h1>
+			<!-- Título da turma -->
+		</section>
+		<section class="materias">
+			<!-- Seção para exibir as matérias -->
+			<article>
+				<!-- Artigo representando uma matéria -->
+				<h2>PROGRAMAÇÃO</h2>
+				<!-- Título da matéria -->
+				<img class="logo-materia" src="html.png" alt="Logo Lógica">
+				<!-- Imagem representando a matéria -->
+				<p class="materia-descricao">Slides e materiais interessantes sobre Programação</p>
+				<!-- Descrição da matéria -->
+				<a href="#" class="link-materiais">Acesse</a>
+				<!-- Link para acessar os materiais da matéria -->
+			</article>
+		</section>
+	</main>
+
+	<footer>
+		<!-- Rodapé da página -->
+		<p class="copyright">&copy;
+			<span id="currentYear"></span>
+			Prof. Érica Cox - <span id="currentYear"></span>
+		</p>
+		<!-- Direitos autorais com o ano atual -->
+	</footer>
+
+	<script>
+		// Obtém o ano atual e atualiza o elemento 'currentYear'
+		document.getElementById('currentYear').textContent = new Date().getFullYear();
+	</script>
+</body>
+</html>
